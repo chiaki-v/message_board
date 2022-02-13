@@ -27,7 +27,7 @@ public class IndexServlet extends HttpServlet {
 
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        EntityManager em = DBUtil.createEntityManager();  //    これがいいかは分からない
+        EntityManager em = DBUtil.createEntityManager();
 
         // 開くページ数を取得（デフォルトは1ページ目）
         int page = 1;
